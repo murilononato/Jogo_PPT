@@ -1,7 +1,83 @@
 @charset "UTF-8";
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-@media screen and (max-width: 668px){
     body{
         background-color: rgb(175, 144, 132);
+        text-align: center;
     }
-}
+
+
+    header > h1{
+        display: block;
+        font-size: 30px;
+        padding: 5px;
+        color: aliceblue;
+    }
+
+    header > p{
+        color: aliceblue;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    li{
+        position: relative;
+        display: inline-block;
+        transform: translateY(9%);
+    }
+
+    .escolha-heroi{
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .herois{
+        width:135px;
+        border: 2px solid black;
+        transition: 1s all;
+    }
+
+    .herois:hover{
+        border-radius: 50%;
+        border: 2px solid green;
+    }
+
+    .pontuação{
+        color: aliceblue;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    main{
+        background-color: peru;
+        padding: 10px 0px;
+        width: 90vw;
+        height: 30vh;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    
+    .batalha{
+        width:150px;
+        padding: 10px;
+    }
+
+    footer > p{
+        margin-top: 30px;
+        font-weight: bold;
+        color: rgba(240, 248, 255, 0.541);
+    }
+
+    .pontuação > li{
+        padding: 0 40px;
+    }
+
+    .pontuação > li > p{
+
+    }
