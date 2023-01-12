@@ -1,6 +1,7 @@
-@media screen and (min-width: 600px) and (max-width: 768px){
+@media screen and (min-width: 520px) and (max-width: 700px){
+
     header > h1{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     header > p{
@@ -17,12 +18,12 @@
     }
       
     .batalha{
-        margin-top: 10px;
-        width:190px;
+        margin-top: 5px;
+        width:155px;
     }
 
     footer > p{
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: 5px;
     }
 
