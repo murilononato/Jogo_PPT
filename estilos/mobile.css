@@ -38,7 +38,6 @@
 
     .escolha-heroi{
         width: 90vw;
-        justify-content: space-between;
     }
 
     .herois{
@@ -65,9 +64,15 @@
         margin: auto;
         border-radius: 20px;
     }
+
+    
+    .pontuação > li{
+        font-size: 18px;
+    }
     
     .batalha{
-        width:125px;
+        margin-top: 50px;
+        width:130px;
         padding: 10px;
     }
 
@@ -81,6 +86,3 @@
         bottom: 0;
     }
 
-    .pontuação > li{
-        font-size: 18px;
-    }

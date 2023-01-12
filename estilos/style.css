@@ -1,0 +1,38 @@
+@media screen and (min-width: 600px) and (max-width: 768px){
+    header > h1{
+        font-size: 35px;
+    }
+
+    header > p{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .herois{
+        width:120px;
+    }
+
+    .pontuação > li{
+        font-size: 25px;
+    }
+      
+    .batalha{
+        margin-top: 10px;
+        width:190px;
+    }
+
+    footer > p{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+
+}
+
+/* Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celulares: 600px até 768px
+Tablets: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
