@@ -19,14 +19,14 @@
 
     header > h1{
         display: block;
-        font-size: 20px;
+        font-size: 25px;
         background-color: rgb(85, 63, 46);
         color: aliceblue;
     }
 
     header > p{
         color: rgb(75, 35, 20);
-        font-size: 15px;
+        font-size: 20px;
         padding: 5px;
     }
 
@@ -41,7 +41,7 @@
     }
 
     .herois{
-        width:90px;
+        width:100px;
         border: 2px solid black;
         transition: 1s all;
     }
@@ -67,12 +67,12 @@
 
     
     .pontuação > li{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .batalha{
         margin-top: 50px;
-        width:130px;
+        width:160px;
         padding: 10px;
     }
 
