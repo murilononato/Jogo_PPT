@@ -1,4 +1,10 @@
 const herois = document.querySelectorAll("[data-heroi]")
+const pontuacaoHeroi = document.getElementById("pontuacaoHeroi")
+const pontuacaoVilao = document.getElementById("pontuacaoVilao")
+const ArenaHeroi = document.getElementById("ArenaHeroi")
+const ArenaVilao = document.getElementById("ArenaVilao")
+var SomaHeroi = 0
+var SomaVilao = 0
 
 herois.forEach((elemento) =>{
     elemento.addEventListener('click',(evento) =>{
@@ -7,6 +13,7 @@ herois.forEach((elemento) =>{
 })
 
 function Jogar(heroi){
+ 
     const rand = Math.floor(Math.random() * 3) + 1;
 
     /*
@@ -18,37 +25,45 @@ function Jogar(heroi){
     if(heroi === "tesoura"){
         if(rand == 1){
             console.log('Perdeu')
-            console.log(heroi + " vs " + rand)
+            ArenaHeroi.src = 'img/tesoura_heroi.jpg'
+            ArenaVilao.src = 'img/tesoura_heroi.jpg'
+            SomaVilao++
         }else if (rand == 2){
             console.log('Venceu')
-            console.log(heroi + " vs " + rand)
+            ArenaHeroi.src = 'img/tesoura_heroi.jpg'
+            ArenaVilao.src = 'img/tesoura_heroi.jpg'
+            SomaHeroi++
         }else{
             console.log('Empate')
-            console.log(heroi + " vs " + rand)
+            ArenaHeroi.src = 'img/tesoura_heroi.jpg'
+            ArenaVilao.src = 'img/tesoura_heroi.jpg'
+  
         }
     } else if( heroi === "pedra"){
         if(rand == 1){
             console.log('Empate')
-            console.log(heroi + " vs " + rand)
+      
         }else if (rand == 2){
             console.log('Perdeu')
-            console.log(heroi + " vs " + rand)
+            SomaVilao++
         }else{
             console.log('Venceu')
-            console.log(heroi + " vs " + rand)
+            SomaHeroi++
         }
     } else {
         if(rand == 1){
             console.log('Venceu')
-            console.log(heroi + " vs " + rand)
+            SomaHeroi++
         }else if (rand == 2){
             console.log('Empate')
-            console.log(heroi + " vs " + rand)
+          
         }else{
             console.log('Perdeu')
-            console.log(heroi + " vs " + rand)
+            SomaVilao++
         }
     }
     
+    pontuacaoHeroi.innerHTML = `Herois: ${SomaHeroi}`
+    pontuacaoVilao.innerHTML = `Vilões: ${SomaVilao}`
 }
 
